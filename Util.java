@@ -62,7 +62,7 @@ public class Util
 		int s = 55; // 55kmh
 		int km = totaldist/1000; 
 		int t = (km*60)/s;
-		return t+stop-2; //stop-2 @reason -> stop => total no. stations in the journey including source and destination station, at each stoppage train is going to halt for 1 min so t+stop-2
+		return t+stop-2; //stop-2 @reason -> stop => total no. stations in the journey including source and destination station, halting time 1 min at each station so t+stop-2
 	}
 	public static int fair(int totaldist)
 	{
