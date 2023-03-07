@@ -226,20 +226,20 @@ public class Main
 		map.put(56,"Joka");
 		return map;
 	}
-	private static ArrayList<ArrayList<Pair>> adjList(int v, int e,int[][]edges)
-	{
-		ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
-        for (int i=0; i<=v; i++)
-        {
-            adj.add(new ArrayList<Pair>());
-        }
-        for (int i=0; i<e; i++)
-        {
-            adj.get(edges[i][0]).add(new Pair(edges[i][2], edges[i][1]));
-            adj.get(edges[i][1]).add(new Pair(edges[i][2], edges[i][0]));
-        }
-        return adj;
-	}
+// 	private static ArrayList<ArrayList<Pair>> adjList(int v, int e,int[][]edges)
+// 	{
+// 		ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
+//         for (int i=0; i<=v; i++)
+//         {
+//             adj.add(new ArrayList<Pair>());
+//         }
+//         for (int i=0; i<e; i++)
+//         {
+//             adj.get(edges[i][0]).add(new Pair(edges[i][2], edges[i][1]));
+//             adj.get(edges[i][1]).add(new Pair(edges[i][2], edges[i][0]));
+//         }
+//         return adj;
+// 	}
 	
 	private static int getInt(String s, HashMap<String, Integer> map) throws NullPointerException
 	{
